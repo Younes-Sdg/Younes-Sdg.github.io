@@ -14,6 +14,7 @@
             color: #f5f5f5;
             line-height: 1.6;
             letter-spacing: 0.05em;
+            position: relative; /* Allow positioning of the email */
         }
 
         header {
@@ -140,6 +141,16 @@
             font-size: 1rem;
         }
 
+        /* Email Positioning */
+        .email {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #f5f5f5; /* Match body text color */
+            font-size: 0.9rem; /* Slightly smaller font size */
+            z-index: 2; /* Above other content */
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
@@ -168,18 +179,18 @@
     <div class="location">Paris, France</div>
 </header>
 
+<div class="email">saddoug.younes@gmail.com</div> 
+
 <div class="container">
     <div class="section" id="about-me">
         <h2>About Me</h2>
         <p>I'm a Master's student in Applied Mathematics & scientific computing, interested in AI and ML.</p>
     </div>
 
-<div class="section" id="resume">
-    <h2>Resume</h2>
-    <p>You can download my resume <a href="https://github.com/Younes-Sdg/Younes-Sdg.github.io/raw/main/Younes_SADDOUG_resume.pdf" target="_blank" class="btn"><span>here</span></a>.</p>
-</div>
-
-
+    <div class="section" id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume <a href="https://github.com/Younes-Sdg/Younes-Sdg.github.io/raw/main/Younes_SADDOUG_resume.pdf" target="_blank" class="btn"><span>here</span></a>.</p>
+    </div>
 
     <div class="section" id="projects">
         <h2>Projects</h2>
@@ -198,8 +209,6 @@
         <p>Email: <a href="mailto:saddoug.younes@gmail.com" class="btn"><span>Contact Me</span></a></p>
     </div>
 </div>
-
-
 
 </body>
 </html>
